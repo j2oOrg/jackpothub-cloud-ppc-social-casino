@@ -1,36 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Age gate
-  const popup = document.getElementById("hubPopup");
-  const enter = document.getElementById("hubEnter");
-  const exitBtn = document.getElementById("hubExit");
-  const AGE_KEY = "jackpothub_age_confirmed";
-
-  if (popup && enter && exitBtn) {
-    const openPopup = () => {
-      popup.classList.add("active");
-      popup.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    };
-    const closePopup = () => {
-      popup.classList.remove("active");
-      popup.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-    };
-
-    if (!localStorage.getItem(AGE_KEY)) {
-      openPopup();
-    }
-
-    enter.addEventListener("click", () => {
-      localStorage.setItem(AGE_KEY, "yes");
-      closePopup();
-    });
-
-    exitBtn.addEventListener("click", () => {
-      window.location.href = "https://www.google.com";
-    });
-  }
-
   // Contact form validation
   const form = document.getElementById("hubForm");
   const status = document.getElementById("hubStatus");

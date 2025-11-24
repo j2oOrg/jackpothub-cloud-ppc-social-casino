@@ -35,6 +35,34 @@ img{max-width:100%; display:block}
 
 .container{width:min(1140px, 100% - 2rem); margin:0 auto}
 
+.notice-banner{
+  background:linear-gradient(135deg, var(--accent), var(--accent-2));
+  color:#031017;
+  padding:0.55rem 0;
+  text-align:center;
+  font-weight:700;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  box-shadow:0 10px 28px rgba(0,0,0,0.35);
+  position:relative;
+  z-index:70;
+}
+.banner-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.65rem;
+  flex-wrap:wrap;
+  font-size:0.97rem;
+}
+.banner-pill{
+  background:rgba(0,0,0,0.12);
+  color:#031017;
+  padding:0.35rem 0.7rem;
+  border-radius:999px;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+
 .jackpothub-cloud-nav{
   background:rgba(6,10,20,0.92);
   border-bottom:1px solid var(--border);
