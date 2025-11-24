@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
-/* Base theme tokens */
 :root{
   --bg: #060a14;
   --panel: rgba(255,255,255,0.05);
@@ -25,7 +24,6 @@
   --shadow: 0 24px 70px rgba(0,0,0,0.5);
 }
 
-/* Global reset + background */
 *{box-sizing:border-box}
 body{
   margin:0;
@@ -45,11 +43,9 @@ a:hover{color:var(--accent); opacity:0.9}
 .link-accent:hover{color:var(--accent-2)}
 img{max-width:100%; display:block}
 
-.container-b2n8{width:min(1140px, 100% - 2rem); margin:0 auto}
+.container{width:min(1140px, 100% - 2rem); margin:0 auto}
 
-/* Top notice banner */
-.notice-banner,
-.notice-banner-a1b2{
+.notice-banner{
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
   color:#031017;
   padding:0.55rem 0;
@@ -60,8 +56,7 @@ img{max-width:100%; display:block}
   position:relative;
   z-index:70;
 }
-.banner-inner-k6v4,
-.banner-inner-a1b2{
+.banner-inner{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -69,8 +64,7 @@ img{max-width:100%; display:block}
   flex-wrap:wrap;
   font-size:0.97rem;
 }
-.banner-pill,
-.banner-pill-a1b2{
+.banner-pill{
   background:rgba(0,0,0,0.12);
   color:#031017;
   padding:0.35rem 0.7rem;
@@ -79,9 +73,7 @@ img{max-width:100%; display:block}
   letter-spacing:0.5px;
 }
 
-/* Header / nav */
-.jackpothub-cloud-nav-r7l6,
-.jackpothub-cloud-nav-a1b2{
+.jackpothub-cloud-nav{
   background:rgba(6,10,20,0.92);
   border-bottom:1px solid var(--border);
   backdrop-filter:blur(14px);
@@ -90,23 +82,20 @@ img{max-width:100%; display:block}
   z-index:60;
   padding:0.85rem 0;
 }
-.jackpothub-cloud-nav-r7l6 .navbar-brand,
-.jackpothub-cloud-nav-r7l6 .navbar-brand-a1b2{
+.jackpothub-cloud-nav .navbar-brand{
   display:flex;
   align-items:center;
   gap:0.65rem;
   padding:0;
 }
-.brand-logo,
-.brand-logo-a1b2{
+.brand-logo{
   width:132px;
   height:auto;
   display:block;
   border-radius:12px;
   box-shadow:0 12px 30px rgba(0,0,0,0.45);
 }
-.jackpothub-cloud-nav-r7l6 .nav-link-z2j7,
-.jackpothub-cloud-nav-r7l6 .nav-link-a1b2{
+.jackpothub-cloud-nav .nav-link{
   color:var(--text);
   font-weight:600;
   margin:0 0.35rem;
@@ -114,24 +103,18 @@ img{max-width:100%; display:block}
   border-radius:10px;
   transition:background .15s, color .15s;
 }
-.jackpothub-cloud-nav-r7l6 .nav-link-z2j7.active-r0l5,
-.jackpothub-cloud-nav-r7l6 .nav-link-z2j7:hover,
-.jackpothub-cloud-nav-r7l6 .nav-link-a1b2.active-a1b2,
-.jackpothub-cloud-nav-r7l6 .nav-link-a1b2:hover{
+.jackpothub-cloud-nav .nav-link.active,
+.jackpothub-cloud-nav .nav-link:hover{
   background:var(--panel);
   color:var(--accent);
 }
-.navbar-toggler,
-.navbar-toggler-a1b2{
+.navbar-toggler{
   border:1px solid var(--border);
   color:var(--text);
 }
-.navbar-toggler:focus,
-.navbar-toggler-a1b2:focus{box-shadow:0 0 0 3px rgba(112,240,199,0.18)}
+.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(112,240,199,0.18)}
 
-/* Buttons */
-.jackpothub-cloud-btn,
-.jackpothub-cloud-btn-a1b2{
+.jackpothub-cloud-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -144,53 +127,142 @@ img{max-width:100%; display:block}
   transition:transform .16s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
   text-decoration:none;
 }
-.jackpothub-cloud-btn.primary,
-.jackpothub-cloud-btn.primary-a1b2{
+.jackpothub-cloud-btn.primary{
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
   color:#060a14;
   box-shadow:0 14px 36px rgba(0,0,0,0.4);
 }
 .jackpothub-cloud-btn.primary:hover{transform:translateY(-2px)}
-.jackpothub-cloud-btn.ghost,
-.jackpothub-cloud-btn.ghost-a1b2{
+.jackpothub-cloud-btn.ghost{
   background:var(--panel);
   border-color:var(--border);
   color:var(--text);
 }
-.jackpothub-cloud-btn.ghost:hover,
-.jackpothub-cloud-btn.ghost-a1b2:hover{color:var(--accent)}
+.jackpothub-cloud-btn.ghost:hover{color:var(--accent)}
 
-/* Section headers */
-.section-title,
-.section-title-a1b2{
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:0.78rem;
+  color:var(--muted);
+  margin:0 0 0.35rem;
+}
+.section-title{
   font-family:var(--font-heading);
   color:var(--heading);
   font-size:2.1rem;
   margin:0 0 0.45rem;
 }
-.section-sub,
-.section-sub-a1b2{margin:0 0 1rem; color:var(--muted)}
+.section-sub{margin:0 0 1rem; color:var(--muted)}
 
-/* Play grid */
-.jackpothub-cloud-play,
-.jackpothub-cloud-play-a1b2{
+.jackpothub-cloud-hero{
+  position:relative;
+  padding:clamp(3rem, 6vw, 4.8rem) 0;
+  overflow:hidden;
+}
+.jackpothub-cloud-hero::before,
+.jackpothub-cloud-hero::after{
+  content:"";
+  position:absolute;
+  width:420px; height:420px;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.35;
+  z-index:0;
+}
+.jackpothub-cloud-hero::before{top:-120px; left:-60px; background:radial-gradient(circle, rgba(112,240,199,0.45), transparent 60%)}
+.jackpothub-cloud-hero::after{bottom:-140px; right:-20px; background:radial-gradient(circle, rgba(245,196,82,0.45), transparent 60%)}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.6rem;
+  text-align:center;
+}
+.hero-title{
+  font-family:var(--font-heading);
+  font-size:2.8rem;
+  line-height:1.08;
+  margin:0 0 0.6rem;
+}
+.hero-sub{
+  color:var(--muted);
+  margin:0 auto;
+  max-width:780px;
+}
+.hero-cta{display:flex; justify-content:center; gap:0.8rem; flex-wrap:wrap; margin-top:1.1rem}
+.hero-badges{
+  display:flex;
+  justify-content:center;
+  gap:0.6rem;
+  flex-wrap:wrap;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  padding:0.4rem 0.8rem;
+  border-radius:999px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  color:var(--muted);
+  font-weight:600;
+  font-size:0.95rem;
+}
+.pill.accent{
+  background:rgba(245,196,82,0.14);
+  color:var(--accent);
+  border-color:rgba(245,196,82,0.4);
+}
+
+.jackpothub-cloud-disclaimer-card{padding:3rem 0}
+.disclaimer-box{
+  max-width:900px;
+  margin:0 auto;
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:1.4rem;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.disclaimer-title{
+  color:var(--heading);
+  margin:0 0 0.35rem;
+  font-family:var(--font-heading);
+}
+.disclaimer-heading{
+  margin:0 0 0.4rem;
+  color:var(--heading);
+  font-family:var(--font-heading);
+}
+.disclaimer-text{color:var(--muted); margin:0 0 1rem}
+.disclaimer-btn{
+  background:var(--accent);
+  color:#060a14;
+  padding:0.6rem 1.25rem;
+  border-radius:999px;
+  font-weight:700;
+  display:inline-block;
+}
+.disclaimer-btn:hover{background:var(--accent-2); color:#02150f}
+
+.jackpothub-cloud-play{
   padding:3.5rem 0;
   text-align:center;
 }
-.game-wrapper,
-.game-wrapper-a1b2{
+.game-wrapper{
   margin:2rem auto;
   display:flex;
   justify-content:center;
 }
-.game-wrapper > .w-100,
-.game-wrapper > .w-100-a1b2{
+.game-wrapper > .w-100{
   width:100%;
   max-width:920px;
   text-align:center;
 }
-.game-frame,
-.game-frame-a1b2{
+.game-frame{
   position:relative;
   width:100%;
   max-width:920px;
@@ -208,16 +280,157 @@ img{max-width:100%; display:block}
   height:100%;
   border:0;
 }
-.game-caption,
-.game-caption-a1b2{
+.game-caption{
   margin-top:0.5rem;
   color:var(--muted);
   font-weight:600;
 }
 
-/* Footer */
-.jackpothub-cloud-footer,
-.jackpothub-cloud-footer-a1b2{
+.jackpothub-cloud-features{
+  padding:3.5rem 0;
+  background:rgba(255,255,255,0.01);
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:1rem;
+  margin-top:1.6rem;
+}
+.feature-box{
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:1.4rem;
+  border-radius:12px;
+  color:var(--text);
+  transition:transform .16s, box-shadow .16s;
+  box-shadow:var(--shadow);
+}
+.feature-box:hover{transform:translateY(-4px); box-shadow:0 18px 46px rgba(0,0,0,0.6)}
+.feature-icon{font-size:1.9rem; color:var(--accent); margin-bottom:0.4rem}
+.feature-box h4{margin:0 0 0.35rem; font-family:var(--font-heading)}
+.feature-box p{margin:0; color:var(--muted)}
+
+.jackpothub-cloud-about{padding:3.8rem 0}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.8rem;
+  align-items:center;
+}
+.about-visual{
+  background:linear-gradient(145deg, rgba(245,196,82,0.2), rgba(112,240,199,0.16));
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:1.5rem;
+  position:relative;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.about-visual::after{
+  content:"JH";
+  position:absolute;
+  right:14px;
+  bottom:8px;
+  font-size:3.6rem;
+  font-weight:800;
+  color:rgba(255,255,255,0.06);
+  letter-spacing:3px;
+}
+.about-visual img{border-radius:12px; box-shadow:0 16px 36px rgba(0,0,0,0.55)}
+.about-text p{color:var(--muted); margin:0 0 0.8rem}
+.about-text .jackpothub-cloud-btn{margin-top:0.4rem}
+
+.jackpothub-cloud-reviews{
+  padding:3.5rem 0;
+  text-align:center;
+}
+.reviews-grid{
+  max-width:940px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:1rem;
+}
+.review-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:1.2rem;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+.review-text{font-style:italic; color:var(--text); margin:0 0 0.6rem}
+.review-author{color:var(--accent); font-weight:700; margin:0}
+
+.jackpothub-cloud-contact{
+  background:rgba(255,255,255,0.01);
+  padding:4rem 0;
+}
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.6rem;
+}
+.contact-info{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:1.1rem;
+  color:var(--text);
+}
+.contact-info p{margin:0.1rem 0; color:var(--muted)}
+.contact-info strong{color:var(--text)}
+.contact-form{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:1.1rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.9rem;
+  box-shadow:var(--shadow);
+}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:0.78rem 0.9rem;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.03);
+  color:var(--text);
+  font-size:1rem;
+  transition:border .16s, box-shadow .16s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline:none;
+  border-color:var(--accent-2);
+  box-shadow:0 0 0 3px rgba(112,240,199,0.18);
+}
+.form-status{
+  min-height:20px;
+  color:var(--muted);
+}
+.form-status.success{color:#8ef8c8}
+.form-status.error{color:#f5c452}
+
+.jackpothub-cloud-legal{
+  background:rgba(255,255,255,0.02);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:3.5rem 0;
+}
+.jackpothub-cloud-legal .section-title{text-align:center}
+.jackpothub-cloud-legal .subheading{
+  color:var(--accent);
+  font-size:1.15rem;
+  margin:1.6rem 0 0.4rem;
+}
+.jackpothub-cloud-legal p{
+  color:var(--muted);
+  margin:0 0 1rem;
+}
+
+.jackpothub-cloud-footer{
   background:rgba(6,10,20,0.95);
   color:var(--text);
   text-align:center;
@@ -233,17 +446,25 @@ img{max-width:100%; display:block}
   background:radial-gradient(circle at 50% 20%, rgba(245,196,82,0.04), transparent 65%);
   z-index:0;
 }
-.jackpothub-cloud-footer .container-b2n8{position:relative; z-index:1}
-.footer-brand,
-.footer-brand-a1b2{
+.jackpothub-cloud-footer .container{position:relative; z-index:1}
+.footer-brand{
   display:flex;
   align-items:center;
   justify-content:center;
   gap:0.7rem;
   margin-bottom:1rem;
 }
-.footer-links,
-.footer-links-a1b2{
+.footer-disclaimer{
+  background:var(--panel);
+  border:1px solid var(--border);
+  color:var(--muted);
+  max-width:780px;
+  margin:0 auto 1.6rem;
+  padding:1.2rem;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+.footer-links{
   display:flex;
   justify-content:center;
   gap:0.85rem;
@@ -252,22 +473,47 @@ img{max-width:100%; display:block}
   margin:0 0 1rem;
   list-style:none;
 }
-.footer-links a,
-.footer-links-a1b2 a{
+.footer-links a{
   color:var(--accent);
   font-weight:600;
 }
-.footer-links a:hover,
-.footer-links-a1b2 a:hover{color:var(--accent-2)}
-.footer-copy,
-.footer-copy-a1b2{
+.footer-links a:hover{color:var(--accent-2)}
+.footer-copy{
   color:var(--muted);
   margin:0;
 }
 
-/* Scroll-to-top */
-.jackpothub-cloud-scroll,
-.jackpothub-cloud-scroll-a1b2{
+.jackpothub-cloud-popup{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0.82);
+  z-index:9999;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .2s, visibility .2s;
+  padding:1rem;
+}
+.jackpothub-cloud-popup.active{opacity:1; visibility:visible}
+.jackpothub-cloud-popup .popup-inner{
+  background:linear-gradient(160deg, rgba(6,10,20,0.96), rgba(6,10,20,0.98));
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:1.6rem;
+  border-radius:14px;
+  max-width:520px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.jackpothub-cloud-popup h3{margin:0 0 0.4rem; color:var(--heading)}
+.jackpothub-cloud-popup p{margin:0 0 0.8rem; color:var(--muted)}
+.popup-buttons{display:flex; justify-content:center; gap:0.6rem; flex-wrap:wrap}
+.popup-buttons .exit{background:transparent; border:1px solid var(--border); color:var(--heading)}
+.popup-buttons .exit:hover{background:var(--panel)}
+
+.jackpothub-cloud-scroll{
   position:fixed;
   right:22px;
   bottom:22px;
@@ -287,13 +533,10 @@ img{max-width:100%; display:block}
   transition:all .16s;
   z-index:90;
 }
-.jackpothub-cloud-scroll.show,
-.jackpothub-cloud-scroll-a1b2.show{opacity:1; visibility:visible}
-.jackpothub-cloud-scroll:hover,
-.jackpothub-cloud-scroll-a1b2:hover{background:var(--accent-2)}
+.jackpothub-cloud-scroll.show{opacity:1; visibility:visible}
+.jackpothub-cloud-scroll:hover{background:var(--accent-2)}
 
-.sr-only,
-.sr-only-a1b2{
+.sr-only{
   position:absolute;
   width:1px;
   height:1px;
@@ -304,40 +547,50 @@ img{max-width:100%; display:block}
   border:0;
 }
 
+@media (max-width: 992px){
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-title{font-size:2.4rem}
+}
 @media (max-width: 768px){
+  .hero-title{font-size:2.05rem}
   .game-frame{max-width:100%}
-  .jackpothub-cloud-nav-r7l6{padding:0.75rem 0}
+  .jackpothub-cloud-nav{padding:0.75rem 0}
 }
 @media (max-width: 576px){
+  .hero-cta{flex-direction:column}
   .brand-logo{width:114px}
 }
-  </style>
+
+</style>
 </head>
 <body class="">
 
 <!-- Persistent responsible-play banner -->
 <div class="">
-  <div class="container-z7n4 banner-inner-w1z9">
+  <div class="container container-z7n4 banner-inner banner-inner-w1z9">
     <span class="">18+</span>
     <span>JackpotHub is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
   </div>
 </div>
 
 <!-- Header / navigation -->
-<nav class="navbar-l8t1 navbar-expand-lg-x4k6 jackpothub-cloud-nav-x9t8">
-  <div class="container-z7n4 d-flex-c1r9 align-items-center-i0j0 justify-content-between-n5f0">
+<nav class="navbar navbar-l8t1 navbar-expand-lg navbar-expand-lg-x4k6 jackpothub-cloud-nav jackpothub-cloud-nav-x9t8">
+  <div class="container container-z7n4 d-flex d-flex-c1r9 align-items-center align-items-center-i0j0 justify-content-between justify-content-between-n5f0">
     <a class="" href="/">
       <img class="" src="../assets/img.png" alt="JackpotHub logo">
       <span class="">JackpotHub.cloud</span>
     </a>
     <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class=""><i class="fas-t7i7 fa-bars-o7u9"></i></span>
+      <span class=""><i class="fas fas-t7i7 fa-bars fa-bars-o7u9"></i></span>
     </button>
 
-    <div class="collapse-r4s1 navbar-collapse-e1o3 justify-content-end-x2c1" id="navMenu">
-      <ul class="navbar-nav-m6c6 mb-2-a5l6 mb-lg-0-f8b7 align-items-lg-center-j8b1">
+    <div class="collapse collapse-r4s1 navbar-collapse navbar-collapse-e1o3 justify-content-end justify-content-end-x2c1" id="navMenu">
+      <ul class="navbar-nav navbar-nav-m6c6 mb-2 mb-2-a5l6 mb-lg-0 mb-lg-0-f8b7 align-items-lg-center align-items-lg-center-j8b1">
         <li class=""><a class="" href="/">Home</a></li>
-        <li class=""><a class="nav-link-e5p8 active-p0p9" href="/play">Play</a></li>
+        <li class=""><a class="nav-link nav-link-e5p8 active active-p0p9" href="/play">Play</a></li>
         <li class=""><a class="" href="/#contact">Contact</a></li>
         <li class=""><a class="" href="/disclaimer">Disclaimer</a></li>
         <li class=""><a class="" href="/privacy-policy">Privacy</a></li>
@@ -356,7 +609,7 @@ img{max-width:100%; display:block}
 
       <div class="">
         <div class="">
-          <div class="pill-y4s4 accent-b3y0">Live preview</div>
+          <div class="pill pill-y4s4 accent accent-b3y0">Live preview</div>
           <div class="">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=stadiumofriches&lang=en_GB&practice=1&channel=desktop&demo=2&refresh=1763688384036" title="Stadium of Riches" allowfullscreen loading="lazy"></iframe>
           </div>
@@ -366,7 +619,7 @@ img{max-width:100%; display:block}
 
       <div class="">
         <div class="">
-          <div class="pill-y4s4 accent-b3y0">Mobile-friendly preview</div>
+          <div class="pill pill-y4s4 accent accent-b3y0">Mobile-friendly preview</div>
           <div class="">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=ringsofprosperity&lang=en_GB&practice=1&channel=mobile&demo=2&refresh=1763688502976" title="Rings of Prosperity" allowfullscreen loading="lazy"></iframe>
           </div>
@@ -376,7 +629,7 @@ img{max-width:100%; display:block}
 
       <div class="">
         <div class="">
-          <div class="pill-y4s4 accent-b3y0">Low-motion preview</div>
+          <div class="pill pill-y4s4 accent accent-b3y0">Low-motion preview</div>
           <div class="">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=lawnndisorder&lang=en_GB&practice=1&channel=mobile&demo=2&refresh=1763688570336" title="Lawn n Disorder" allowfullscreen loading="lazy"></iframe>
           </div>
@@ -411,7 +664,7 @@ img{max-width:100%; display:block}
 </footer>
 
 <button id="hubScrollTop" class="" aria-label="Scroll to top">
-  <i class="fas-t7i7 fa-chevron-up-v2n5"></i>
+  <i class="fas fas-t7i7 fa-chevron-up fa-chevron-up-v2n5"></i>
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
