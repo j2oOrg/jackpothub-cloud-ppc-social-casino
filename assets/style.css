@@ -123,12 +123,12 @@ img{max-width:100%; display:block}
   box-shadow:0 14px 36px rgba(0,0,0,0.4);
 }
 .jackpothub-cloud-btn.primary:hover{transform:translateY(-2px)}
-.jackpothub-cloud-btn.ghost{
+.jackpothub-cloud-btn.outline{
   background:var(--panel);
   border-color:var(--border);
   color:var(--text);
 }
-.jackpothub-cloud-btn.ghost:hover{color:var(--accent)}
+.jackpothub-cloud-btn.outline:hover{color:var(--accent)}
 
 .eyebrow{
   text-transform:uppercase;
